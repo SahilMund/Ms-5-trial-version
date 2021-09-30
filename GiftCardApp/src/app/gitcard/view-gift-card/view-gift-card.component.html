@@ -1,0 +1,25 @@
+<div class="container card">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Buyer Name</th>
+                <th scope="col">Shipping Address</th>
+                <th scope="col">City</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listData">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.buyerName}}</td>
+                <td>{{item.shippingAddress}}</td>
+                <td>{{item.city}}</td>
+                <td>{{item.amount}}</td>
+                <td>{{item.phone}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
